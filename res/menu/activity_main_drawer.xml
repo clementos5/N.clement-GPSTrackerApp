@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:visible="true">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/new_account"
+            android:title="Home" />
+    </group>
+    <item android:title="Drivers" android:visible="true">
+        <menu>
+            <item
+                android:id="@+id/nav_add_new_account"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Create Account" />
+            <item
+                android:id="@+id/nav_lgn"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Login" />
+        </menu>
+    </item>
+
+    <item android:title="Passengers" android:visible="true">
+        <menu>
+            <item
+                android:id="@+id/nav_send_request"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send Request" />
+        </menu>
+    </item>
+
+
+    <item android:title="Actions">
+        <menu>
+            <item
+                android:id="@+id/nav_close_app"
+                android:icon="@drawable/closeapp"
+                android:title="Close"/>
+        </menu>
+    </item>
+</menu>

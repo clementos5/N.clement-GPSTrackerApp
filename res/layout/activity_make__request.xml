@@ -1,0 +1,314 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="#008855"
+    tools:context="com.tebuka.project.year.afinal.tebukapp.Create_Account_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Provide Your Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:textStyle="normal|bold|italic"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:padding="2dp"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+
+            <!--- names -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/company"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:id="@+id/names"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/form_left_width"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Names"
+                            android:layout_weight="1"
+                            android:textAppearance="@android:style/TextAppearance"
+                            android:textAlignment="viewStart"
+                            android:textStyle="normal|bold"
+                            android:textAllCaps="false"
+                            android:textColor="#003300"
+                            android:fontFamily="casual" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/inputs_styles">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textStart"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:textColorLink="@android:color/holo_green_light"
+                            android:id="@+id/EditTextName" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:id="@+id/genders"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/form_left_width"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:text="Gender"
+                            android:layout_weight="1"
+                            android:textAppearance="@android:style/TextAppearance"
+                            android:textAlignment="viewStart"
+                            android:textStyle="normal|bold"
+                            android:textColor="#003300"
+                            android:fontFamily="casual" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/inputs_styles">
+
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:id="@+id/EditTextGender">
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Male"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toRightOf="@+id/male"
+                                android:text="Female"/>
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:id="@+id/Telephone"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/form_left_width"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Tel. No"
+                            android:textColor="#003300"
+                            android:textStyle="normal|bold"
+                            android:textAlignment="viewStart"
+                            android:layout_height="40dp"
+                            android:fontFamily="casual" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/inputs_styles">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:elevation="0dp"
+                            android:background="@null"
+                            android:breakStrategy="high_quality"
+                            android:inputType="number|phone"
+                            android:id="@+id/EditTextPhone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:id="@+id/emails"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/form_left_width"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Email"
+                            android:textColor="#003300"
+                            android:layout_weight="1"
+                            android:textAlignment="viewStart"
+                            android:textStyle="normal|bold"
+                            android:fontFamily="casual" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/inputs_styles">
+
+                        <EditText
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:id="@+id/EditTextEmail" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:id="@+id/Date"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="@dimen/form_left_width"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Date"
+                            android:textColor="#003300"
+                            android:layout_weight="1"
+                            android:textAlignment="viewStart"
+                            android:textStyle="normal|bold"
+                            android:fontFamily="casual" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/inputs_styles">
+                        <EditText
+                            android:id="@+id/EditTextDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:inputType="textEmailAddress"
+                            android:padding="10dp"
+                            android:background="@null"
+                            android:textColor="@color/bg_main"
+                            android:textColorHint="@color/input_register_hint"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="wrap_content"
+                    android:text="Locate on Google Map"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:visibility="visible"
+                    android:id="@+id/link_to_google_map" />
+
+                <Button
+                    android:text="Details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/request_details"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

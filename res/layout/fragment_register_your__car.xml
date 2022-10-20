@@ -1,0 +1,212 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_bcg"
+    tools:context="com.tebuka.project.year.afinal.tebukapp.Create_Account_Fragment">">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/closeapp">
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="REGISTER CAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:textStyle="normal|bold|italic"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:padding="2dp"
+            android:textSize="24sp"
+            android:freezesText="false" />
+    </LinearLayout>
+
+
+    <!--- names -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/company"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/CarName"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/form_left_width"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Car Name"
+                    android:layout_weight="1"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold"
+                    android:textAllCaps="false"
+                    android:textColor="#003300"
+                    android:fontFamily="casual"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/inputs_styles">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:id="@+id/car_name"
+                    android:background="@null"
+                    android:textAlignment="textStart"
+                    android:layout_height="match_parent"
+                    android:textColorLink="@android:color/holo_green_light" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/Date"
+                android:layout_marginTop="5dp"
+                android:layout_height="30dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="@dimen/form_left_width"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Start Date"
+                        android:textColor="#003300"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:textStyle="normal|bold"
+                        android:fontFamily="casual"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/inputs_styles">
+
+                    <EditText
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:id="@+id/car_start_date" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/CarLocation"
+                android:layout_marginTop="5dp"
+                android:layout_height="30dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="@dimen/form_left_width"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Location"
+                        android:textColor="#003300"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:textStyle="normal|bold"
+                        android:fontFamily="casual"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/inputs_styles">
+
+                    <EditText
+                        android:inputType="text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:id="@+id/car_location"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="1dp"
+            android:text="Register"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:id="@+id/reg_car"
+            android:background="@drawable/insert_button"
+            android:layout_height="30dp"
+            android:layout_width="80dp" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

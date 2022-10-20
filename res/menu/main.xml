@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+            <item android:title="Refresh"
+                android:id="@+id/refresh" />
+
+            <item android:title="BackGround"
+                android:id="@+id/background"
+                android:checkable="false" />
+
+            <item android:title="About Us"
+                android:id="@+id/aboutus" />
+
+            <item android:title="Help"
+                android:id="@+id/help" />
+
+            <item android:title="More"
+                android:id="@+id/more" />
+
+</menu>

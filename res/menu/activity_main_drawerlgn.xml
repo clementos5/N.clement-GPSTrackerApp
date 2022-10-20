@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:visible="true">
+        <item
+            android:id="@+id/homelgn"
+            android:icon="@drawable/new_account"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallerylgn"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Activate GPS" />
+    </group>
+    <item android:title="Actions">
+        <menu>
+            <item
+                android:id="@+id/close_applgn"
+                android:icon="@drawable/closeapp"
+                android:title="Close" />
+        </menu>
+    </item>
+</menu>

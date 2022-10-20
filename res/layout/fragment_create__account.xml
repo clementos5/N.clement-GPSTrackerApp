@@ -1,0 +1,539 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_bcg"
+    tools:context="com.tebuka.project.year.afinal.tebukapp.Create_Account_Fragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="CREATE ACCOUNT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:fontFamily="cursive"
+                android:textStyle="normal|bold|italic"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <!--- names -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/names"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="@dimen/form_left_height"
+                android:layout_width="@dimen/form_left_width">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Names"
+                    android:layout_weight="1"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold|italic"
+                    android:textAllCaps="false"
+                    android:textColor="#003300"
+                    android:fontFamily="casual"
+                    android:layout_height="35dp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/inputs_styles">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPersonName"
+                    android:id="@+id/name"
+                    android:background="@null"
+                    android:textColorLink="@android:color/holo_green_light"
+                    android:forceHasOverlappingRendering="false"
+                    android:filterTouchesWhenObscured="true"
+                    android:fitsSystemWindows="true"
+                    android:autoLink="none"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- gender -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/genders"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="@dimen/form_left_height"
+                android:layout_width="@dimen/form_left_width">
+
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:text="Gender"
+                    android:layout_weight="1"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold|italic"
+                    android:textColor="#003300"
+                    android:fontFamily="casual"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:background="@drawable/inputs_styles"
+                android:paddingRight="10dp">
+
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Male"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/male"
+                        android:text="Female"
+                        android:layout_marginLeft="30dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- status -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/statuss"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="@dimen/form_left_height"
+                android:layout_width="@dimen/form_left_width">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#003300"
+                    android:layout_weight="1"
+                    android:text="Status"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold|italic"
+                    android:fontFamily="casual"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/inputs_styles">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/spinner_status"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--phone number -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/Telephone"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/form_left_width"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Tel. No"
+                    android:textColor="#003300"
+                    android:textStyle="normal|bold|italic"
+                    android:textAlignment="viewStart"
+                    android:layout_height="match_parent"
+                    android:fontFamily="casual"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/inputs_styles">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/phone"
+                    android:layout_weight="1"
+                    android:elevation="0dp"
+                    android:background="@null"
+                    android:breakStrategy="high_quality"
+                    android:inputType="number|phone"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- email -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/emails"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/form_left_width"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Email"
+                    android:textColor="#003300"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold|italic"
+                    android:fontFamily="casual"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/inputs_styles">
+
+                <EditText
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:id="@+id/lgnemail"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- location -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/locations"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/form_left_width"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Location"
+                    android:textColor="#003300"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold|italic"
+                    android:fontFamily="casual"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/inputs_styles">
+
+                <EditText
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:id="@+id/location"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <!-- Driving license -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/drivinglicenses"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/form_left_width"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="D. License"
+                    android:textColor="#003300"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold|italic"
+                    android:fontFamily="casual"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@drawable/inputs_styles">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:inputType="textAutoComplete"
+                    android:ems="10"
+                    android:id="@+id/drivinglicense"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- plaque -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/placque"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:layout_width="@dimen/form_left_width"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="@dimen/form_left_width"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Plaque"
+                    android:textColor="#003300"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold|italic"
+                    android:fontFamily="casual"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:baselineAligned="false"
+                android:clickable="false"
+                android:background="@drawable/inputs_styles">
+
+                <EditText
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:id="@+id/plaque"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/password"
+            android:layout_height="30dp">
+            <LinearLayout
+                android:layout_width="@dimen/form_left_width"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="@dimen/form_left_width"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Password"
+                    android:textColor="#003300"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold|italic"
+                    android:fontFamily="casual"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:baselineAligned="false"
+                android:clickable="false"
+                android:background="@drawable/inputs_styles">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/pswd"
+                    android:password="true"
+                    android:inputType="text"
+                    android:background="@null"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/confirm"
+            android:layout_height="30dp">
+            <LinearLayout
+                android:layout_width="@dimen/form_left_width"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="@dimen/form_left_width"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Confirm"
+                    android:textColor="#003300"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold|italic"
+                    android:fontFamily="casual"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:baselineAligned="false"
+                android:clickable="false"
+                android:background="@drawable/inputs_styles">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/pswdconfirm"
+                    android:password="true"
+                    android:inputType="text"
+                    android:background="@null"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <Button
+                android:id="@+id/btn_create_account"
+                android:background="@drawable/insert_button"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="80dp"
+                android:text="Create"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_reset_account"
+                android:background="@drawable/reset_button"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="80dp"
+                android:text="Reset"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

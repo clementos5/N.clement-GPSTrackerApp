@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/fragment_bcg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:background="@drawable/rounded_login"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/lgnemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:fontFamily="sans-serif" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/rounded_login"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/lgnpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Password" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <Button
+                    android:text="LOGIN"
+                    android:id="@+id/btn_login"
+                    android:layout_below="@+id/lgnpassword"
+                    android:layout_marginTop="10dp"
+                    android:onClick="checkLogin"
+                    android:background="@drawable/insert_button"
+                    android:layout_weight="0.01"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp" />
+
+                <Button
+                    android:text="CANCEL"
+                    android:id="@+id/btn_cancel"
+                    android:layout_below="@+id/lgnpassword"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/reset_button"
+                    android:layout_weight="0.01"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
